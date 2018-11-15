@@ -15,6 +15,12 @@ This document is split into LPS Installing and development below.
 2. [Micro SD](https://www.raspberrypi.org/documentation/installation/sd-cards.md)
 3. [NodeJS](https://nodejs.org/en/)
 4. Love
+5. PuTTy [Google search putty download OS]
+6. https://www.youtube.com/watch?v=O4oVIsZJDs4
+	Linux Users: after watching the video do the following steps.
+	https://www.raspberrypi.org/forums/viewtopic.php?t=164999
+7. You are good to go. To install the code you've been working on, type in the following command into the ssh of raspberry pi: `npm install --save username/repo#branch-name`
+8. [Install node into raspberry pi](https://github.com/nodesource/distributions/blob/master/README.md)
 
 ## HOW TO GET STARTED
 1. JOIN OUR MEETUP
