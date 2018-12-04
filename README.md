@@ -33,4 +33,31 @@ This document is split into LPS Installing and development below.
 #### Flash OS into micro SD
 Install OS using any of the steps mentioned [here](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
 
+## How to test?
+### VSCode
+#### add the following to launch.json
+```
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+		  "type": "node",
+		  "request": "launch",
+		  "name": "Launch current file w/ ts-node",
+		  "protocol": "inspector",
+		  "args": ["${relativeFile}"],
+		  "cwd": "${workspaceRoot}",
+		  "runtimeArgs": ["-r", "ts-node/register"],
+		  "internalConsoleOptions": "openOnSessionStart"
+		}
+	]
+}
+```
+### Debug test/test.ts
+- Place break points in test/test.ts:runTest()
+- While in the test/test.ts press `F5`
+
 
